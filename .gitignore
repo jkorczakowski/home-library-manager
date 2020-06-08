@@ -161,3 +161,7 @@ hs_err_pid*
 #.mvn/wrapper/maven-wrapper.jar
 
 # End of https://www.toptal.com/developers/gitignore/api/java,intellij,maven
+**/*.localz
+**/*.local
+**/*.git
+**/*.DS_Store
