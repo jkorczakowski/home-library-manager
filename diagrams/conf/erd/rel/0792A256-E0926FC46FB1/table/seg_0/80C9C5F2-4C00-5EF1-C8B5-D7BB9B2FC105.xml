@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="80C9C5F2-4C00-5EF1-C8B5-D7BB9B2FC105" name="book">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:33:11 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="1C97E5E5-11AF-859C-C41B-338CF51159E7">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:34:20 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="58C8FF8B-6317-9CE8-D72B-4CD84ACEB51E">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:34:32 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pages" id="56392D3F-A652-AE6F-C0A4-F58469657FFC">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:37:33 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="releaseDate" id="ED076462-A4C5-7F34-BC89-FCDCC6FA4795">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:38:06 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="language" id="E80F6966-647C-D11C-4F03-A23D1EF6DD5D">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:38:27 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="isRead" id="D22464E5-A963-BD44-8432-DCE84213DE78">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:39:34 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="isbn" id="2EE76E59-9F31-BFC9-1958-83FD9985DD47">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:42:05 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="publisher_id" id="2E75C454-818D-CA1B-BD78-2737DFFB5571">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:14:35 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="62C418CA-14D0-EE43-3D55-EF7AC516B28B" referredColumn="E6CFFE3E-E46B-3560-CD2D-10F010430BBC"/>
+</associations>
+</Column>
+<Column name="extra" id="DCCA4AAD-D99F-B057-1056-8BE24912D19C">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:16:53 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="FDF690A9-A1D2-DD60-57A6-38EFE3A71013">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:18:29 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23BE2071-6D93-2D2F-F6A0-F15F807D79D7" referredColumn="475F95F3-955A-1778-5D8C-EE33B4A3EA97"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C00132CD-AE66-28BA-8B0E-128DF2AD0958" name="book_PK">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:34:20 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C97E5E5-11AF-859C-C41B-338CF51159E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A850677D-14BE-53E7-F5BC-B052F88AC1C1" name="book_publisher_FK">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:14:35 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E75C454-818D-CA1B-BD78-2737DFFB5571"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4815D5D6-5DCE-7F45-96F8-6DC7E1A3CDDE" name="book_user_FK">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:18:29 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FDF690A9-A1D2-DD60-57A6-38EFE3A71013"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F469A103-EE4A-CFFE-DCAB-1AE630148849" name="genre">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:02:44 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="4AC854B3-D0C8-66E4-D6D1-BCECD7801A04">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:02:55 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="E4773DAA-D993-E174-0DF2-B892DA8F54CF">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:03:10 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DB86A176-97BE-B2A1-49B8-4645C022C5FF" name="genre_PK">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:02:55 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AC854B3-D0C8-66E4-D6D1-BCECD7801A04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

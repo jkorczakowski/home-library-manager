@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="0792A256-3D63-498D-4169-E0926FC46FB1" mainViewID="F74E1353-C85B-7AAD-445A-5759AE02872B">
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="HomeLibraryManagerDB" id="0792A256-3D63-498D-4169-E0926FC46FB1" mainViewID="F74E1353-C85B-7AAD-445A-5759AE02872B">
 <createdBy>jck</createdBy>
 <createdTime>2020-06-08 23:12:38 UTC</createdTime>
 <ownerDesignName>erd</ownerDesignName>

@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0DB90560-23C5-8F01-EB9B-BC77439B55E9" name="author_book">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:55:02 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="73A7AB43-F5EB-C49F-B1C8-1F73E3421A06">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:55:21 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="author_id" id="71F5CFF1-3EE4-DA48-9A3D-3394045BFCA6">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:55:59 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF2C2423-32D4-4B28-B1D7-73B219D65985" referredColumn="5D5F463C-193F-DCC0-D533-84A035E3C4E7"/>
+</associations>
+</Column>
+<Column name="book_id" id="ACBA2B7A-C0D6-CD03-E6B3-3189F3FE20AB">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:56:38 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BD918A43-20D2-3121-4DF4-3EA21B387661" referredColumn="1C97E5E5-11AF-859C-C41B-338CF51159E7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E5E331E-44E7-D842-F070-83EFC55E206E" name="author_book_PK">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:55:21 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73A7AB43-F5EB-C49F-B1C8-1F73E3421A06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7DF168BF-2C67-B9F4-7B37-98CB8FB3FE02" name="author_book_author_FK">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:55:59 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71F5CFF1-3EE4-DA48-9A3D-3394045BFCA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AEA5A7D7-652D-ECB1-575B-AC32AAA5CD6B" name="author_book_book_FK">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:56:38 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACBA2B7A-C0D6-CD03-E6B3-3189F3FE20AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

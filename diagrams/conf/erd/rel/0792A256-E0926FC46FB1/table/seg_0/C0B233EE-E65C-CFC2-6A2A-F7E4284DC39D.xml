@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C0B233EE-E65C-CFC2-6A2A-F7E4284DC39D" name="publisher">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:11:40 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="E6CFFE3E-E46B-3560-CD2D-10F010430BBC">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:12:08 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="5A906BCF-2D7F-85EF-0EAC-7BDB65385A78">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:12:08 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datePublisherCreation" id="BAC99A32-5A91-B9D5-4C75-F2C384A354EC">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:13:23 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="5F464AB9-6287-CA50-9FB3-2B86FEADDFE4">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:14:05 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="894ADB21-F0E8-1C99-412B-D10E24775607" name="publisher_PK">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:12:08 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6CFFE3E-E46B-3560-CD2D-10F010430BBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

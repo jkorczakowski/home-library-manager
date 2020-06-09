@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="634EB42B-8C24-D277-FE2D-70002CFA1373" name="list">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:08:45 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="19870736-C1F0-3747-D330-EC5EC7F51D12">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:08:56 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="936E7796-2D14-1A7E-2914-574F65730160">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:09:08 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="131FD729-2190-E837-2657-7F48154E25DE">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:10:15 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BA2605EB-BAD3-1C10-EC51-2BBC297E2616" name="list_PK">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:08:56 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="19870736-C1F0-3747-D330-EC5EC7F51D12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

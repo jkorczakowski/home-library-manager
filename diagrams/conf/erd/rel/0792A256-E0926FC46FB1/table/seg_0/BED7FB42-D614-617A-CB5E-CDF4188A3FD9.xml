@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BED7FB42-D614-617A-CB5E-CDF4188A3FD9" name="user">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:17:21 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="475F95F3-955A-1778-5D8C-EE33B4A3EA97">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:17:31 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="9C633EF4-1FE6-8473-54A3-F3CF769EA0A3">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:17:58 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="FC2E6D24-2E99-8CE9-A007-04236806B660">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:18:12 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="13DD1BEE-942E-B904-7CA3-A1FE9F788CE9" name="user_PK">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-09 00:17:31 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="475F95F3-955A-1778-5D8C-EE33B4A3EA97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A073C99B-959F-1A53-79C3-83B0E0250DD1" name="author">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:27:48 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="5D5F463C-193F-DCC0-D533-84A035E3C4E7">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:28:25 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="A3BFC0C6-D719-5DD4-0670-B7A700C3FCA4">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:32:23 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="surname" id="5A833555-FE54-353F-DB3B-7085E5D4A040">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:32:37 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="007BA65D-3DBD-D0CC-51F6-C91D37C2ED2D" name="author_PK">
+<createdBy>jck</createdBy>
+<createdTime>2020-06-08 23:28:25 UTC</createdTime>
+<ownerDesignName>erd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D5F463C-193F-DCC0-D533-84A035E3C4E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
