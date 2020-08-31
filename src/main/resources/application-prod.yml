@@ -1,0 +1,11 @@
+server.error.include-message=always
+spring:
+  h2.console:
+    enabled: true
+     path: '/console'
+  datasource:
+    url: h2:file:/home/jck/git/home-library-manager/hlmdb
+  main:
+    banner-mode: off
+  data.rest:
+    base-path: false
