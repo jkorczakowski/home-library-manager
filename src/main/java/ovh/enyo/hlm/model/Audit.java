@@ -9,7 +9,7 @@ import javax.persistence.PreUpdate;
 import java.time.LocalDateTime;
 
 @Embeddable
-abstract class Audi {
+class Audit {
     private LocalDateTime createdOn;
     private LocalDateTime updatedOn;
 

@@ -1,11 +1,12 @@
-server.error.include-message=always
 spring:
-  h2.console:
-    enabled: true
-     path: '/console'
   datasource:
-    url: h2:file:/home/jck/git/home-library-manager/hlmdb
-  main:
-    banner-mode: off
-  data.rest:
-    base-path: false
+    url: jdbc:h2:file:/home/jck/git/home-library-manager/hlmdb
+  h2:
+    console:
+      enabled: true
+      path: '/console'
+  jpa:
+    hibernate:
+      ddl-auto: validate
+#  flyway:
+#    baseline-on-migrate: true

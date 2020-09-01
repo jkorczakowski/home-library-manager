@@ -1,46 +1,43 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="634EB42B-8C24-D277-FE2D-70002CFA1373" name="list">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7D1B12DE-EC78-A8DB-0BEC-A082DDEBFEEF" name="extras">
 <createdBy>jck</createdBy>
-<createdTime>2020-06-09 00:08:45 UTC</createdTime>
+<createdTime>2020-06-09 12:20:34 UTC</createdTime>
 <ownerDesignName>erd</ownerDesignName>
-<ordsAlias>table_11</ordsAlias>
+<ordsAlias>table_13</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="19870736-C1F0-3747-D330-EC5EC7F51D12">
+<Column name="id" id="AA796A1C-8EC5-B651-F301-E5AB80EA6A84">
 <createdBy>jck</createdBy>
-<createdTime>2020-06-09 00:08:56 UTC</createdTime>
+<createdTime>2020-06-09 12:21:15 UTC</createdTime>
 <ownerDesignName>erd</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="title" id="936E7796-2D14-1A7E-2914-574F65730160">
+<Column name="title" id="41CA052C-6B7E-D96E-C8D0-5392FC86B6D6">
 <createdBy>jck</createdBy>
-<createdTime>2020-06-09 00:09:08 UTC</createdTime>
+<createdTime>2020-06-09 12:21:15 UTC</createdTime>
 <ownerDesignName>erd</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<dataTypeSize>64</dataTypeSize>
-<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="description" id="131FD729-2190-E837-2657-7F48154E25DE">
+<Column name="content" id="E380AD1C-114C-09E7-37AC-E4D10269A700">
 <createdBy>jck</createdBy>
-<createdTime>2020-06-09 00:10:15 UTC</createdTime>
+<createdTime>2020-06-09 12:21:15 UTC</createdTime>
 <ownerDesignName>erd</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<dataTypeSize>255</dataTypeSize>
-<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="user_id" id="860FA37B-94A9-42BE-8655-FC2272E683FE">
+<Column name="user_id" id="F4C1F7BB-AEEE-CECB-A32D-68DE758CBA87">
 <createdBy>jck</createdBy>
-<createdTime>2020-06-09 12:16:01 UTC</createdTime>
+<createdTime>2020-06-09 12:21:20 UTC</createdTime>
 <ownerDesignName>erd</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -48,30 +45,30 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="E02F7273-F289-72B9-D817-2D5EFD9586D5" referredColumn="475F95F3-955A-1778-5D8C-EE33B4A3EA97"/>
+<colAssociation fkAssociation="0CE650DE-F1A6-85E3-592D-0A864A8C82D8" referredColumn="475F95F3-955A-1778-5D8C-EE33B4A3EA97"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="BA2605EB-BAD3-1C10-EC51-2BBC297E2616" name="list_PK">
+<ind_PK_UK id="4901CFA7-B8D3-29DE-B8A1-7C910771006A" name="info_PK">
 <createdBy>jck</createdBy>
-<createdTime>2020-06-09 00:08:56 UTC</createdTime>
+<createdTime>2020-06-09 12:21:15 UTC</createdTime>
 <ownerDesignName>erd</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="19870736-C1F0-3747-D330-EC5EC7F51D12"/>
+<colUsage columnID="AA796A1C-8EC5-B651-F301-E5AB80EA6A84"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CADC48C3-6DB1-5520-66BF-47B4C6CAFCC9" name="list_user_FK">
+<ind_PK_UK id="18786B91-FA3C-2248-AB7B-55690D440DD6" name="info_user_FK">
 <createdBy>jck</createdBy>
-<createdTime>2020-06-09 12:16:01 UTC</createdTime>
+<createdTime>2020-06-09 12:21:20 UTC</createdTime>
 <ownerDesignName>erd</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="860FA37B-94A9-42BE-8655-FC2272E683FE"/>
+<colUsage columnID="F4C1F7BB-AEEE-CECB-A32D-68DE758CBA87"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

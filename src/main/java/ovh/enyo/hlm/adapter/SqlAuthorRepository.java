@@ -1,10 +1,11 @@
-package ovh.enyo.hlm.repository;
+package ovh.enyo.hlm.adapter;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import ovh.enyo.hlm.model.Author;
+import ovh.enyo.hlm.repository.AuthorRepository;
 
 @Repository
 interface SqlAuthorRepository extends AuthorRepository, JpaRepository<Author, Integer> {
