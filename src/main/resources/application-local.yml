@@ -1,12 +1,11 @@
 spring:
   datasource:
     url: jdbc:h2:file:/home/jck/git/home-library-manager/hlmdb
+    initialization-mode: never
   h2:
     console:
       enabled: true
       path: '/console'
   jpa:
     hibernate:
-      ddl-auto: validate
-#  flyway:
-#    baseline-on-migrate: true
+      ddl-auto: update

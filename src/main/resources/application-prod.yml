@@ -1,3 +1,10 @@
 spring:
-  h2.console:
-    enabled: false
+  datasource:
+    url: jdbc:h2:file:~/.hlm/hlmdb
+    initialization-mode: never
+  h2:
+    console:
+      enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: update

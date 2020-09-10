@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home Library Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../css/shards.min.css"> -->
+</head>
+
+<body>
+<div class="container">
+    <h1>Home Library Manager</h1>
+    <hr>
+    <h2>Details</h2>
+    <form action="#" th:action="@{/detailsBook}" th:object="${book}">
+        <input type="hidden" th:field="*{id}" class="form-control mb-4 col-4" disabled>
+
+        <div class="form-control mb-4 col-auto">
+            <label for="nameId">Name:</label>
+            <input type="text" id="nameId" name="name" th:field="*{name}" style="border: none" class="ml-auto" disabled>
+        </div>
+
+        <div class="form-control mb-4 col-auto">
+            <label for="authorsId">Authors:</label>
+            <input type="text" id="authorsId" name="authors" th:field="*{authors}" style="border: none" class="ml-auto" disabled>
+        </div>
+
+        <div class="form-control mb-4 col-auto" name="isbnfield">
+            <label for="isbnId">ISBN:</label>
+            <input type="text" id="isbnId" name="isbn" th:field="*{isbn}"  style="border: none" class="ml-auto" disabled>
+        </div>
+
+        <div class="form-control mb-4 col-auto">
+            <label for="formatId">Format:</label>
+            <input type="text" id="formatId" name="format" th:field="*{format}" style="border: none" class="ml-auto" disabled>
+        </div>
+
+        <div class="form-control mb-4 col-auto">
+            <label for="genresId">Genres:</label>
+            <input type="text" id="genresId" name="genres" th:field="*{genres}" style="border: none" class="ml-auto" disabled>
+        </div>
+
+        <div class="form-control mb-4 col-auto">
+            <label for="publisherId">Publisher:</label>
+            <input type="text" id="publisherId" name="publisher" th:field="*{publisher}" style="border: none" class="ml-auto"disabled>
+        </div>
+
+        <div class="form-control mb-4 col-auto">
+            <label for="qualityId">Quality:</label>
+            <input type="text" id="qualityId" name="quality" th:field="*{quality}" style="border: none" class="ml-auto" disabled>
+        </div>
+
+        <div class="form-control mb-4 col-3">
+            <label for="pagesId">Pages:</label>
+            <input type="text" id="pagesId" name="pages" th:field="*{pages}" style="border: none" class="ml-auto" disabled>
+        </div>
+
+        <div class="form-control mb-4 col-3">
+            <label for="priceId">Price:</label>
+            <input type="text" id="priceId" name="price" th:field="*{price}" style="border: none" class="ml-auto" disabled>
+        </div>
+
+        <div class="form-control mb-4 col-3">
+        <label for="readId">Read</label>
+        <input type="checkbox" name="read" id="readId" th:field="*{read}" class="ml-auto" disabled>
+        </div>
+
+        <div class="form-control mb-4 col-3">
+            <label for="hardcoverId">Hardcover</label>
+            <input type="checkbox" name="hardcover" id="hardcoverId" th:field="*{hardcover}" class="ml-auto" disabled>
+        </div>
+
+        <div class="form-control mb-4 col-3">
+            <label for="boughtId">Bought</label>
+            <input type="checkbox" name="bought" id="boughtId" th:field="*{read}" class="ml-auto" disabled>
+        </div>
+
+<!--        <button type="submit" class="btn btn-info col-2">Update Book</button>-->
+    </form>
+    <hr>
+
+    <a th:href="@{/}">Back to Book List</a>
+</div>
+</body>
+
+</html>
