@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home Library Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../css/shards.min.css"> -->
+</head>
+
+<body>
+<div class="container">
+    <h1>Home Library Manager</h1>
+    <hr>
+    <h2>Update Book</h2>
+
+    <form action="#" th:action="@{/updateBook}" th:object="${book}" method="POST">
+        <input type="hidden" th:field="*{id}" placeholder="Book Id" class="form-control mb-4 col-4">
+            <div class="form-control mb-4 col-auto" style="border: none">
+                <label for="nameId" >*Name:</label>
+                <input type="text" id="nameId" name="name" th:field="*{name}"  class="ml-5 col-6" required>
+                <td th:if="${#fields.hasErrors('name')} " th:errors="*{name}"></td>
+            </div>
+
+            <div class="form-control mb-4 col-auto" style="border: none">
+                <label for="authorsId">Authors:</label>
+                <input type="text" id="authorsId" th:field="*{authors}"  class="ml-lg-4 col-6" >
+            </div>
+
+            <div class="form-control mb-4 col-auto" style="border: none">
+                <label for="isbnId">ISBN:</label>
+                <input type="text" id="isbnId" th:field="*{isbn}"   class="ml-5 col-6" >
+            </div>
+
+            <div class="form-control mb-4 col-auto" style="border: none">
+                <label for="formatId">Format:</label>
+                <input type="text" id="formatId" th:field="*{format}"  class="ml-5 col-6" >
+            </div>
+
+            <div class="form-control mb-4 col-auto" style="border: none">
+                <label for="genresId">Genres:</label>
+                <input type="text" id="genresId" th:field="*{genres}"  class="ml-5 col-6" >
+            </div>
+
+            <div class="form-control mb-4 col-auto" style="border: none">
+                <label for="publisherId">Publisher:</label>
+                <input type="text" id="publisherId" th:field="*{publisher}"  class="ml-5 col-6">
+            </div>
+
+            <div class="form-control mb-4 col-auto" style="border: none">
+                <label for="qualityId">Quality:</label>
+                <input type="text" id="qualityId" th:field="*{quality}"  class="ml-5 col-6" >
+            </div>
+
+            <div class="form-control mb-4 col-6" style="border: none">
+                <label for="pagesId">*Pages:</label>
+                <input type="text" id="pagesId" th:field="*{pages}"  class="ml-5 col-2" required pattern="[0-9]{1-4}">
+                <td th:if="${#fields.hasErrors('pages')} " th:errors="*{pages}"></td>
+            </div>
+
+            <div class="form-control mb-4 col-9" style="border: none">
+                <label for="priceId">*Price:</label>
+                <input type="text" id="priceId" th:field="*{price}"  class="ml-5 col-2" required pattern="[0-9]{0,5}\.?[0-9]{0,2}">
+                <td th:if="${#fields.hasErrors('price')} " th:errors="*{price}"></td>
+            </div>
+
+            <div class="form-control mb-4 col-2">
+                <label for="readId">Read</label>
+                <input type="checkbox" name="readId" id="readId" th:field="*{read}" class="ml-auto" >
+            </div>
+
+            <div class="form-control mb-4 col-2">
+                <label for="hardcoverId">Hardcover</label>
+                <input type="checkbox" name="hardcover" id="hardcoverId" th:field="*{hardcover}" class="ml-auto" >
+            </div>
+
+            <div class="form-control mb-4 col-2">
+                <label for="boughtId">Bought</label>
+                <input type="checkbox" name="bought" id="boughtId" th:field="*{read}" class="ml-auto" >
+            </div>
+
+        <button type="submit" class="btn btn-info col-2">Update Book</button>
+    </form>
+    <hr>
+
+
+    <a th:href="@{/}">Back to Book List</a>
+</div>
+
+</body>
+
+</html>

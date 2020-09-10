@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    initialization-mode: always
+  h2:
+    console:
+      enabled: true
+      path: '/console'
+  jpa:
+    hibernate:
+      ddl-auto: create-drop

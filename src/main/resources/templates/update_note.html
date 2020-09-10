@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home Library Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../css/shards.min.css"> -->
+</head>
+
+<body>
+<div class="container">
+    <h1>Home Library Manager</h1>
+    <hr>
+    <h2>Save Note</h2>
+
+    <form action="#" th:action="@{/notes/updateNote}" th:object="${note}" method="POST">
+        <input type="hidden" th:field="*{id}" placeholder="Note Id" class="form-control mb-4 col-4">
+        <div class="form-control mb-4 col-8" style="border: none">
+            <label for="titleId" >Title:</label>
+            <input type="text" id="titleId" th:field="*{title}"  class="ml-4 col-6" >
+            <td th:if="${#fields.hasErrors('title')} " th:errors="*{title}"></td>
+        </div>
+
+        <div class="form-control mb-xl-5 col-7" style="border: none">
+            <label for="contentId" >Content:</label>
+            <textarea rows="10" cols="20" id="contentId" th:field="*{content}"
+                      class="ml-auto col-7" style="vertical-align: middle"></textarea>
+            <br><br>
+        </div>
+
+        <div class="form-control ml-xl-5 mb-5 col-5" style="border: none; float: right">
+            <label for="bookId" style="margin-left: 80px">*Book:</label>
+            <select class="form-control selected mb-4 ml-0 col-6" th:field="*{book}" id="bookId" required>
+                <option value="">--Books--</option>
+                <option th:each="book : ${books}"
+                        th:value="${book.id}"
+                        th:text="${book.name}">
+                </option>
+            </select>
+            <td th:if="${#fields.hasErrors('book')} " th:errors="*{book}"></td>
+        </div>
+
+        <button type="submit" class="btn btn-info col-2" style="margin-top: 300px">Save Note</button>
+    </form>
+    <hr>
+
+    <a th:href="@{/notes}">Back to Note List</a>
+</div>
+</body>
+
+</html>
