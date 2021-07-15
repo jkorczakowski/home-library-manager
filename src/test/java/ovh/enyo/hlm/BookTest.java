@@ -28,10 +28,6 @@ public class BookTest {
 
     @BeforeEach
     public void setUp() {
-
-//        ChromeOptions chromeOptions = new ChromeOptions();
-//        chromeOptions.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200",
-//                "--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
         driver = new ChromeDriver();
         driver.get("http://127.0.0.1:8080/books");
     }
@@ -128,47 +124,47 @@ public class BookTest {
        softly.assertAll();
     }
 
-//    @Test
-//    public void deleteAndFilterAndPageNumberBookTest() {
-//
-//        String preTotalItemsTemp = "Total Items: 8";
-//        String preTotalItems = driver.findElement(By.xpath("/html/body/div[1]/div[4]")).getText();
-//        WebElement el = driver.findElement(By.xpath("//*[@id=\"keyword\"]"));
-//        el.sendKeys("Test");
-//        el.sendKeys(Keys.ENTER);
-//
-//        driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[8]/a[3]")).click();
-//        String postTotalItems = driver.findElement(By.xpath("/html/body/div[1]/div[4]")).getText();
-//        String postTotalItemsTemp =  "Total Items: 7";
-//
-//        System.out.println(preTotalItems);
-//        System.out.println(postTotalItems);
-//
-//        SoftAssertions softly = new SoftAssertions();
-//        softly.assertThat(preTotalItems).isEqualTo(preTotalItemsTemp);
-//        softly.assertThat(postTotalItems).isEqualTo(postTotalItemsTemp);
-//        softly.assertAll();
-//    }
-//
-//    @Test
-//    public void testDetailsBook() {
-//        WebElement el = driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr[1]/td[8]/a[1]"));
-//        el.click();
-//        String testName = driver.findElement(By.name("name")).getAttribute("value");
-//        String name = "De Doctrina Christiana";
-//        String testGenre = driver.findElement(By.name("genres")).getAttribute("value");
-//        String genre = "theology";
-//        String testPages = driver.findElement(By.name("pages")).getAttribute("value");
-//        String pages = "342";
-//
-//        SoftAssertions softly = new SoftAssertions();
-//
-//        softly.assertThat(testName).isEqualTo(name);
-//        softly.assertThat(testGenre).isEqualTo(genre);
-//        softly.assertThat(testPages).isEqualTo(pages);
-//
-//        softly.assertAll();
-//    }
+    @Test
+    public void deleteAndFilterAndPageNumberBookTest() {
+
+        String preTotalItemsTemp = "Total Items: 8";
+        String preTotalItems = driver.findElement(By.xpath("/html/body/div[1]/div[4]")).getText();
+        WebElement el = driver.findElement(By.xpath("//*[@id=\"keyword\"]"));
+        el.sendKeys("Test");
+        el.sendKeys(Keys.ENTER);
+
+        driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr/td[8]/a[3]")).click();
+        String postTotalItems = driver.findElement(By.xpath("/html/body/div[1]/div[4]")).getText();
+        String postTotalItemsTemp =  "Total Items: 7";
+
+        System.out.println(preTotalItems);
+        System.out.println(postTotalItems);
+
+        SoftAssertions softly = new SoftAssertions();
+        softly.assertThat(preTotalItems).isEqualTo(preTotalItemsTemp);
+        softly.assertThat(postTotalItems).isEqualTo(postTotalItemsTemp);
+        softly.assertAll();
+    }
+
+    @Test
+    public void testDetailsBook() {
+        WebElement el = driver.findElement(By.xpath("/html/body/div[1]/table/tbody/tr[1]/td[8]/a[1]"));
+        el.click();
+        String testName = driver.findElement(By.name("name")).getAttribute("value");
+        String name = "De Doctrina Christiana";
+        String testGenre = driver.findElement(By.name("genres")).getAttribute("value");
+        String genre = "theology";
+        String testPages = driver.findElement(By.name("pages")).getAttribute("value");
+        String pages = "342";
+
+        SoftAssertions softly = new SoftAssertions();
+
+        softly.assertThat(testName).isEqualTo(name);
+        softly.assertThat(testGenre).isEqualTo(genre);
+        softly.assertThat(testPages).isEqualTo(pages);
+
+        softly.assertAll();
+    }
 
 
 
