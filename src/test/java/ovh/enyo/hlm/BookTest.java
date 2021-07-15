@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -27,7 +28,11 @@ public class BookTest {
 
     @BeforeEach
     public void setUp() {
-        driver = new ChromeDriver();
+
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200",
+                "--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
+        driver = new ChromeDriver(chromeOptions);
         driver.get("http://127.0.0.1:8080/books");
     }
 
