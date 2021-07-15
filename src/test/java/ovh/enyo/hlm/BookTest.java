@@ -44,7 +44,6 @@ public class BookTest {
     @Test
     public void addBookAndUpdateAndPagingTest() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, 20);
-        driver.wait(20);
         WebElement el = driver.findElement(By.xpath("/html/body/div[1]/p/a[1]/i"));
         wait.until(ExpectedConditions.elementToBeClickable(el));
         el.click();
