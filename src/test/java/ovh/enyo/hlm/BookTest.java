@@ -29,10 +29,10 @@ public class BookTest {
     @BeforeEach
     public void setUp() {
 
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200",
-                "--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
-        driver = new ChromeDriver(chromeOptions);
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        chromeOptions.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200",
+//                "--ignore-certificate-errors","--disable-extensions","--no-sandbox","--disable-dev-shm-usage");
+        driver = new ChromeDriver();
         driver.get("http://127.0.0.1:8080/books");
     }
 
@@ -44,6 +44,7 @@ public class BookTest {
     @Test
     public void addBookAndUpdateAndPagingTest() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/p/a[1]/i")));
         WebElement el = driver.findElement(By.xpath("/html/body/div[1]/p/a[1]/i"));
         wait.until(ExpectedConditions.elementToBeClickable(el));
         el.click();
